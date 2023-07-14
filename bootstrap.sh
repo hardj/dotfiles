@@ -20,8 +20,6 @@ function sync-linux() {
         --exclude ".ssh" \
         --exclude ".git" \
         --exclude ".ideavimrc" \
-        --exclude ".p10k.zsh" \
-        --exclude ".fzf.zsh" \
         -avh --no-perms . ~;
     source ~/.zshrc;
 }
