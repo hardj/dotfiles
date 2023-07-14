@@ -79,7 +79,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git 
-    you-should-use 
     brew 
     composer 
     docker 
@@ -129,7 +128,6 @@ alias myip="curl http://ipecho.net/plain; echo"
 alias usage="du -h -d1"
 alias lg="lazygit"
 alias tmx="tmux a"
-alias vim="nvim"
 alias mc='mc --nosubshell'
 
 
