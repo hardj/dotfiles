@@ -1,0 +1,8 @@
+[core]
+	autocrlf = input
+[user]
+	name = John Fedoreev
+	email = jhardj@gmail.com
+[pull]
+	ff = only
+	rebase = true

@@ -1,0 +1,11 @@
+set clipboard+=unnamed
+Plug 'vim-matchit' 
+Plug 'chrisbra/matchit' 
+set matchit
+Plug 'easymotion/vim-easymotion'
+let mapleader=" "
+map <leader><leader>w <Plug>(easymotion-bd-w)
+map <leader><leader>l <Plug>(easymotion-bd-jk)
+" nmap <leader><leader>l <Plug>(easymotion-overwin-line)
+inoremap jk <esc> 
+set easymotion
