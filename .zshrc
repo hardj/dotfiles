@@ -129,6 +129,7 @@ alias usage="du -h -d1"
 alias lg="lazygit"
 alias tmx="tmux a"
 alias mc='mc --nosubshell'
+alias ls='colorls'
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
