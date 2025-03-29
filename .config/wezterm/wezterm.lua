@@ -45,6 +45,14 @@ config.keys = {
    {key="l", mods="CTRL", action=wezterm.action{ActivatePaneDirection="Right"}},
    {key="д", mods="CTRL", action=wezterm.action{ActivatePaneDirection="Right"}},
    {
+    key = 't',
+    mods = 'LEADER',
+    action = wezterm.action_callback(function(win, pane)
+      local tab, window = pane:move_to_new_tab()
+      tab:activate()
+    end),
+   },
+   {
       key = ',',
       mods = 'LEADER',
       action = wezterm.action.PromptInputLine {
@@ -64,10 +72,13 @@ config.keys = {
       action = wezterm.action.TogglePaneZoomState,
    },
 }
+
+
 config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
-config.window_background_opacity = 0.80
-config.macos_window_background_blur = 40
+config.window_background_opacity = 0.90
+config.macos_window_background_blur = 10
+config.native_macos_fullscreen_mode = true
 
 
 return config
